@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img id="logo-img" src="/recource/images/logo.jpg" alt="logo" />
+      </div>
+      <div id="logotxt">
+        <p id="defgspc">Groupe de secours et de protection citoyen</p>
+      </div>
+      <nav id="navch">
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/autrepage/engagepage.html">Je m'engage</a></li>
+          <li><a href="/autrepage/demande_de_dps.html">Demande de DPS</a></li>
+          <li><a href="/autrepage/formation.html">Formation</a></li>
+          <li><a href="https://www.instagram.com/gspcsecours">INSTA</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="annonce">Formation au GSPC</h1>
+      <p id="engagertxt">
+        💡 La formation, c’est pour tout le monde ❗ <br />
+        👨‍👩‍👧 Que tu sois citoyen, salarié, étudiant ou bénévole, tu peux apprendre
+        les gestes qui comptent. <br />
+        🤝 Peu importe ton âge, ton parcours ou ton expérience, chacun a sa
+        place. <br />
+        👉 Le Pôle Formation du GSPC t’accompagne pour développer tes
+        compétences et renforcer ta confiance. <br />
+        🚑 Nos formateurs partagent leur savoir avec pédagogie et passion, pour
+        que chacun reparte avec des outils utiles au quotidien. <br />
+        🌍 Ensemble, nous construisons une société plus sûre, où chacun peut
+        agir et protéger. <br />
+        ➡️ Parce que se former, c’est donner du pouvoir à chacun ✨
+      </p>
+      <div id="formulaire">
+        <h2>📝 Inscription aux formations du GSPC</h2>
+        <form action="/autrepage/noframwork.html" method="post">
+          <fieldset>
+            <legend>🧑‍💼 Informations personnelles</legend>
+
+            <label for="nom">Nom :</label><br />
+            <input type="text" id="nom" name="nom" required /><br /><br />
+
+            <label for="prenom">Prénom :</label><br />
+            <input type="text" id="prenom" name="prenom" required /><br /><br />
+
+            <label for="telephone">Numéro de téléphone :</label><br />
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              required
+            /><br /><br />
+
+            <label for="email">Adresse e-mail :</label><br />
+            <input type="email" id="email" name="email" required /><br />
+            <label for="naissance">Date de naissance :</label><br />
+            <input
+              type="date"
+              id="naissance"
+              name="naissance"
+              required
+            /><br /><br />
+
+            <label for="formation">Choix de la formation :</label><br />
+            <select id="formation" name="formation" required>
+              <option value="">--Sélectionnez une formation--</option>
+              <option value="psc1">
+                PSC1 - Prévention et Secours Civiques de niveau 1
+              </option>
+              <option value="pse1">
+                PSE1 - Premiers Secours en Équipe de niveau 1
+              </option>
+              <option value="pse2">
+                PSE2 - Premiers Secours en Équipe de niveau 2
+              </option>
+              <option value="CI">CI - Chef d'Intervention</option>
+              <option value="BNSSA">
+                BNSSA - Brevet National de Sauvetage et de Secours Aquatiques
+              </option>
+              <option value="sst">
+                SST - Sauveteur Secouriste du Travail
+              </option></select
+            ><br /><br />
+
+            <input type="submit" value="S'inscrire" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      © 2025 GSPC – Groupe de Secours et de Protection Civile - Tous droits
+      réservés.
+    </footer>
+  </body>
+</html>

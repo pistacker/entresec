@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Je m'engage</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img id="logo-img" src="/recource/images/logo.jpg" alt="logo" />
+      </div>
+      <div id="logotxt">
+        <p id="defgspc">Groupe de secours et de protection citoyen</p>
+      </div>
+      <nav id="navch">
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/autrepage/engagepage.html">Je m'engage</a></li>
+          <li><a href="/autrepage/demande_de_dps.html">Demande de DPS</a></li>
+          <li><a href="/autrepage/formation.html">Formation</a></li>
+          <li><a href="https://www.instagram.com/gspcsecours">INSTA</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="annonce">Demande de DPS</h1>
+      <p id="engagertxt">
+        🎉 Tu organises un événement sportif, culturel ou festif ❓ <br />
+        👥 Tu veux assurer la sécurité de ton public et de tes participants ❓
+        <br />
+        👉 Le GSPC – Groupe de Secours et de Protection Citoyen est là pour toi
+        ! <br />
+        🚑 Nos équipes bénévoles, formées et équipées, mettent en place des
+        Dispositifs Prévisionnels de Secours (DPS) adaptés à ton événement.
+        <br />
+        💪 Présence rassurante, interventions rapides et coordination efficace :
+        nous veillons sur chacun, du début à la fin. <br />
+        📋 Que ce soit un concert, une compétition ou une fête locale, nous
+        préparons avec toi un plan de secours sur mesure.<br />
+        ➡️ Demande ton DPS dès maintenant et assure la sécurité de ton événement
+        ✨
+      </p>
+      <div id="formulaire">
+        <h2>📝 Demande de Dispositif Prévisionnel de Secours (DPS)</h2>
+        <form action="/autrepage/noframwork.html" method="post">
+          <fieldset>
+            <legend>🧑‍💼 Informations sur l’organisateur</legend>
+
+            <label for="nom">Nom de l’organisateur :</label><br />
+            <input type="text" id="nom" name="nom" required /><br /><br />
+
+            <label for="prenom">Prénom de l’organisateur :</label><br />
+            <input type="text" id="prenom" name="prenom" required /><br /><br />
+
+            <label for="naissance">Date de naissance :</label><br />
+            <input
+              type="date"
+              id="naissance"
+              name="naissance"
+              required
+            /><br /><br />
+
+            <label for="telephone">Numéro de téléphone :</label><br />
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="06 12 34 56 78"
+              required
+            /><br /><br />
+
+            <label for="adresse">Adresse postale complète :</label><br />
+            <input
+              type="text"
+              id="adresse"
+              name="adresse"
+              placeholder="N° et rue, CP, Ville"
+              required
+            /><br /><br />
+
+            <label for="email">Adresse e‑mail :</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nom@domaine.fr"
+              required
+            /><br /><br />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>📍 Informations sur l’événement</legend>
+
+            <label for="lieu">Lieu exact du dispositif :</label><br />
+            <input
+              type="text"
+              id="lieu"
+              name="lieu"
+              placeholder="Adresse, salle, terrain..."
+              required
+            /><br /><br />
+
+            <label for="date_event"
+              >Date et horaires de l’événement (début et fin) :</label
+            ><br />
+            <input
+              type="text"
+              id="date_event"
+              name="date_event"
+              placeholder="Ex : 12/05/2026 de 14h à 18h"
+              required
+            /><br /><br />
+
+            <label for="type">Type d’événement :</label><br />
+            <select id="type" name="type" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="sportif">Sportif</option>
+              <option value="culturel">Culturel</option>
+              <option value="festif">Festif</option>
+              <option value="institutionnel">Institutionnel</option>
+              <option value="autre">Autre</option></select
+            ><br /><br />
+
+            <label for="participants"
+              >Nombre de participants/spectateurs attendus :</label
+            ><br />
+            <input
+              type="number"
+              id="participants"
+              name="participants"
+              min="0"
+              required
+            /><br /><br />
+
+            <label for="public">Public attendu :</label><br />
+            <select id="public" name="public" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="adultes">Adultes</option>
+              <option value="enfants">Enfants</option>
+              <option value="mixte">Mixte</option></select
+            ><br /><br />
+
+            <label for="securite"
+              >Dispositifs de sécurité déjà prévus (vigiles, barrières, etc.)
+              :</label
+            ><br />
+            <textarea
+              id="securite"
+              name="securite"
+              rows="3"
+              placeholder="Décrivez les dispositifs prévus..."
+              required
+            ></textarea
+            ><br /><br />
+
+            <label for="medecin"
+              >Présence d’un médecin ou d’un service médical sur place :</label
+            ><br />
+            <select id="medecin" name="medecin" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option></select
+            ><br /><br />
+
+            <label for="source">Comment avez-vous connu le GSPC ?</label><br />
+            <select id="source" name="source" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="site_web">Site web</option>
+              <option value="bouche_a_oreille">Bouche à oreille</option>
+              <option value="reseaux_sociaux">Réseaux sociaux</option>
+              <option value="autre">Autre</option></select
+            ><br /><br />
+          </fieldset>
+          <br />
+
+          <button type="submit">🚑 Envoyer la demande de DPS</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      © 2025 GSPC – Groupe de Secours et de Protection Civile - Tous droits
+      réservés.
+    </footer>
+  </body>
+</html>

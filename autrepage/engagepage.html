@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Je m'engage</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img id="logo-img" src="/recource/images/logo.jpg" alt="logo" />
+      </div>
+      <div id="logotxt">
+        <p id="defgspc">Groupe de secours et de protection citoyen</p>
+      </div>
+      <nav id="navch">
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/autrepage/engagepage.html">Je m'engage</a></li>
+          <li><a href="/autrepage/demande_de_dps.html">Demande de DPS</a></li>
+          <li><a href="/autrepage/formation.html">Formation</a></li>
+          <li><a href="https://www.instagram.com/gspcsecours">INSTA</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="annonce">S'engager au GSPC</h1>
+      <p id="engagertxt">
+        💡 Tu es passionné par le secourisme ❓<br />
+        🤝 Tu aimes aider les autres et être là quand ça compte ❓<br />
+        Alors n’attends plus <br />
+        👉 Rejoins le GSPC – Groupe de Secours et de Protection Citoyen ! <br />
+        🚑 Ensemble, nous formons une équipe engagée, prête à intervenir,
+        protéger et soutenir la population. <br />
+        💪 Discipline, solidarité et esprit d’entraide sont nos valeurs. <br />
+        🌍 Que tu sois débutant ou déjà expérimenté, ta place est parmi nous !
+        <br />
+        ➡️ Rejoins l’aventure et deviens acteur de la sécurité citoyenne ✨
+      </p>
+      <div id="formulaire">
+        <h2>📝 Formulaire d'engagement au GSPC</h2>
+        <form action="/autrepage/noframwork.html" method="post">
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" required /><br /><br />
+
+          <label for="prenom">Prénom :</label><br />
+          <input type="text" id="prenom" name="prenom" required /><br /><br />
+
+          <label for="telephone">Numéro de téléphone :</label><br />
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="06 12 34 56 78"
+            required
+          /><br /><br />
+
+          <label for="adresse">Adresse :</label><br />
+          <input type="text" id="adresse" name="adresse" required /><br /><br />
+
+          <label for="email">Email :</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="naissance">Date de naissance :</label><br />
+          <input
+            type="date"
+            id="naissance"
+            name="naissance"
+            required
+          /><br /><br />
+
+          <label for="motivation"
+            >Pourquoi voulez-vous rejoindre le GSPC ?</label
+          ><br />
+          <textarea
+            id="motivation"
+            name="motivation"
+            rows="4"
+            cols="40"
+            placeholder="Expliquez en quelques mots..."
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">🚑 Rejoindre le GSPC</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      © 2025 GSPC – Groupe de Secours et de Protection Civile - Tous droits
+      réservés.
+    </footer>
+  </body>
+</html>
