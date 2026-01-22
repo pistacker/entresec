@@ -1,175 +1,175 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 0, 0));
-  padding-bottom: 60px;
+body { /* C'est le style de TOUTE la page - tout ce qui est en haut en bas à gauche à droite */
+  font-family: Arial, sans-serif; /* Le type d'écriture utilisé partout - Arial c'est facile à lire sur un écran */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 0, 0)); /* Le fond de la page change graduellement du noir vers le rouge de haut en bas */
+  padding-bottom: 60px; /* On laisse vide 60 pixels en bas so que le texte ne se cache pas derrière le menu en bas */
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #b30000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
+.footer { /* C'est le petit menu qui reste toujours en bas de la page même quand on scroll */
+  position: fixed; /* Ça veut dire que même si tu scrolles la page, le footer reste visible */
+  bottom: 0; /* Le positionne tout en bas de l'écran */
+  left: 0; /* Le positionne du côté gauche */
+  width: 100%; /* Il prend toute la largeur de l'écran */
+  height: 60px; /* Il a une hauteur de 60 pixels - pas trop grand pas trop petit */
+  background-color: #b30000; /* Couleur de fond rouge foncé, un peu agressif */
+  color: white; /* Le texte à l'intérieur est blanc pour contraster avec le fond rouge */
+  display: flex; /* On utilise flexbox - c'est une façon d'arranger les éléments facilement */
+  align-items: center; /* Les éléments sont centrés verticalement au milieu */
+  justify-content: flex-start; /* Les éléments commencent à gauche et s'étendent vers la droite */
+  padding-left: 20px; /* On laisse de l'espace sur la gauche avant le contenu commence */
 }
 
-#logo-img {
-  margin-right: 20px;
-  width: 154px;
-  height: 52px;
+#logo-img { /* C'est l'image du logo - l'image que tu vois en haut du site */
+  margin-right: 20px; /* On met de l'espace à droite de l'image pour ne pas qu'elle touche ce qui vient après */
+  width: 154px; /* L'image fait 154 pixels de large */
+  height: 52px; /* L'image fait 52 pixels de haut */
 }
 
-#logotxt {
-  font-size: 24px;
-  font-weight: bold;
-  color: red;
-  font-family: "Arial", sans-serif;
-  text-decoration: none;
-  text-align: center;
+#logotxt { /* C'est le texte du logo - le titre/nom du site */
+  font-size: 24px; /* La taille du texte - 24 pixels c'est assez gros pour bien voir */
+  font-weight: bold; /* Le texte est en gras - plus épais donc plus visible */
+  color: red; /* La couleur du texte est rouge */
+  font-family: "Arial", sans-serif; /* On utilise la même police Arial partout pour la cohérence */
+  text-decoration: none; /* Pas de soulignement sous le texte */
+  text-align: center; /* Le texte est centré au milieu */
 }
 
-#navch ul {
-  list-style-type: none;
-  margin: 0;
-  margin-left: 150px;
-  padding: 0;
-  background-color: #000000;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 11%;
-  align-items: center;
-  z-index: 1000;
-  justify-content: space-evenly;
+#navch ul { /* C'est le menu de navigation - la barre avec les liens vers d'autres pages */
+  list-style-type: none; /* Normalement une liste a des puces (des petits points) - on les retire ici */
+  margin: 0; /* On enlève tous les espaces autour de la liste */
+  margin-left: 150px; /* Sauf qu'on laisse 150 pixels d'espace sur la gauche */
+  padding: 0; /* Espace à l'intérieur de la liste = 0 */
+  background-color: #000000; /* Le fond du menu est noir */
+  display: flex; /* On utilise flexbox pour arranger les liens du menu en ligne */
+  position: absolute; /* Le menu est positionné par rapport à son conteneur */
+  top: 0; /* Tout en haut */
+  left: 0; /* À gauche */
+  width: 100%; /* Il prend toute la largeur */
+  height: 11%; /* Et 11% de la hauteur de la page */
+  align-items: center; /* Les liens sont centrés verticalement */
+  z-index: 1000; /* Il s'affiche par-dessus les autres éléments */
+  justify-content: space-evenly; /* L'espace entre chaque lien est égal */
 }
 
-ul li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  padding: 14px 16px;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+ul li a { /* C'est un lien dans le menu - quand tu cliques tu vas sur une autre page */
+  display: block; /* Le lien prend tout l'espace disponible - pas juste le texte */
+  color: rgb(255, 255, 255); /* La couleur du texte est blanc */
+  padding: 14px 16px; /* Espace autour du texte - 14 pixels en haut/bas et 16 à gauche/droite */
+  text-decoration: none; /* Pas de soulignement - les liens par défaut sont soulignés mais pas ici */
+  padding: 10px 20px; /* On change l'espace - 10 pixels en haut/bas et 20 à gauche/droite */
+  border-radius: 4px; /* Les coins sont arrondis - c'est plus joli que pointu */
 }
 
-ul li a:hover {
-  background-color: #ff0000;
+ul li a:hover { /* Quand tu passes la souris sur un lien du menu - c'est l'effet au survol */
+  background-color: #ff0000; /* Le fond devient rouge vif - ça montre que c'est cliquable */
 }
 
-main h1 {
-  text-align: center;
-  color: red;
+main h1 { /* C'est le titre principal de chaque page - en gros en haut */
+  text-align: center; /* Le texte est centré au milieu */
+  color: red; /* La couleur du titre est rouge */
 }
 
-p {
-  color: whitesmoke;
+p { /* C'est le style pour les paragraphes - le texte normal du site */
+  color: whitesmoke; /* La couleur est grise un peu blanchâtre - facile à lire sur le fond sombre */
 }
 
-#defgspc {
-  color: red;
-  text-align: center;
-  margin-top: 5%;
+#defgspc { /* C'est la définition de GSPC - l'explication du sigle */
+  color: red; /* Le texte est en rouge comme les autres titres */
+  text-align: center; /* Centré au milieu */
+  margin-top: 5%; /* 5% d'espace vide au-dessus - c'est une proportion de la page */
 }
 
-img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+img { /* C'est le style pour TOUTES les images du site */
+  width: 200px; /* Les images font 200 pixels de large */
+  height: auto; /* La hauteur s'ajuste automatiquement pour ne pas déformer l'image */
+  border-radius: 10px; /* Les coins de l'image sont arrondis - c'est plus joli qu'une boîte carrée */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Une petite ombre douce sous l'image - ça la rend moins plate */
 }
 
-.imgcont {
-  display: flex;
-  margin-bottom: 30px;
+.imgcont { /* C'est le conteneur qui enveloppe les images */
+  display: flex; /* On utilise flexbox pour arranger les images */
+  margin-bottom: 30px; /* De l'espace vide en bas pour ne pas que l'image suivante soit collée */
 }
 
-.pimg {
-  margin-left: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-start;
+.pimg { /* C'est la section qui contient les images et le texte à côté */
+  margin-left: 10%; /* 10% d'espace vide sur la gauche - ça laisse respirer */
+  display: flex; /* On utilise flexbox pour arranger les éléments */
+  justify-content: center; /* Les éléments sont centrés horizontalement */
+  align-items: center; /* Les éléments sont centrés verticalement */
+  align-items: flex-start; /* Finalement non - on change pour que les éléments commencent en haut */
 }
 
-#engagertxt {
-  text-align: center;
-  font-weight: bold;
-  font-size: large;
+#engagertxt { /* C'est le texte qui parle de l'engagement du site */
+  text-align: center; /* Centré au milieu */
+  font-weight: bold; /* En gras pour qu'on le remarque */
+  font-size: large; /* Grande taille pour que ce soit visible */
 }
 
-#formulaire {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  width: 400px;
-  max-width: 100%;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+#formulaire { /* C'est le formulaire qu'on remplit pour contacter le site */
+  background-color: #f9f9f9; /* Le fond est blanc cassé - pas pur blanc mais presque */
+  padding: 20px; /* De l'espace de 20 pixels partout à l'intérieur du formulaire */
+  border-radius: 8px; /* Les coins sont arrondis pour un look moderne */
+  width: 400px; /* Le formulaire fait 400 pixels de large */
+  max-width: 100%; /* Mais sur petit écran il peut être plus petit - pas plus de 100% */
+  margin: 20px auto; /* De l'espace en haut et en bas, et centré au milieu */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Une ombre autour du formulaire pour le détacher */
 }
 
-#formulaire h2 {
-  text-align: center;
-  color: #b30000;
-  margin-bottom: 20px;
+#formulaire h2 { /* C'est le titre du formulaire - par exemple "Contactez-nous" */
+  text-align: center; /* Centré au milieu */
+  color: #b30000; /* Couleur rouge foncé pour matcher le thème du site */
+  margin-bottom: 20px; /* De l'espace vide en bas avant le formulaire */
 }
 
-#formulaire label {
-  font-weight: bold;
-  display: block;
-  margin-top: 10px;
+#formulaire label { /* C'est l'étiquette qui dit ce qu'il faut remplir - par exemple "Votre nom:" */
+  font-weight: bold; /* En gras pour qu'on le remarque */
+  display: block; /* L'étiquette prend toute la largeur - elle est seule sur sa ligne */
+  margin-top: 10px; /* De l'espace au-dessus de chaque étiquette */
 }
 
 #formulaire input,
 #formulaire select,
-#formulaire textarea {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+#formulaire textarea { /* C'est les cases où on tape - texte, listes déroulantes, zones de texte */
+  width: 100%; /* Elles prennent toute la largeur du formulaire */
+  box-sizing: border-box; /* Ça veut dire que les marges et bordures sont comprises dans la largeur */
+  padding: 8px; /* De l'espace dedans pour que le texte ne soit pas collé aux bords */
+  margin-top: 5px; /* Un petit espace en haut de chaque champ */
+  border: 1px solid #ccc; /* Une bordure grise fine autour */
+  border-radius: 4px; /* Les coins sont arrondis */
+  font-family: Arial, sans-serif; /* Police Arial - pareil que le reste du site */
+  font-size: 14px; /* Taille de police lisible */
 }
 
-#formulaire textarea {
-  resize: vertical;
-  min-height: 80px;
+#formulaire textarea { /* C'est la grande zone de texte pour écrire de longs messages */
+  resize: vertical; /* On peut le faire plus grand ou plus petit en tirant vers le bas - mais pas vers les côtés */
+  min-height: 80px; /* Ça commence avec au minimum 80 pixels de haut - assez grand pour écrire */
 }
 
-#formulaire button {
-  background-color: #b30000;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  width: 100%;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 15px;
+#formulaire button { /* C'est le bouton "Envoyer" - qu'on clique pour envoyer le formulaire */
+  background-color: #b30000; /* Couleur rouge foncé comme le reste du site */
+  color: white; /* Le texte dedans est blanc pour bien contraster */
+  padding: 10px; /* De l'espace dedans autour du texte */
+  border: none; /* Pas de bordure - c'est plus moderne */
+  border-radius: 4px; /* Les coins sont arrondis */
+  width: 100%; /* Le bouton prend toute la largeur du formulaire */
+  cursor: pointer; /* Quand on passe la souris dessus le curseur change - pour montrer c'est cliquable */
+  font-size: 16px; /* Taille du texte */
+  margin-top: 15px; /* De l'espace au-dessus du bouton */
 }
 
-#formulaire button:hover {
-  background-color: #ff0000;
+#formulaire button:hover { /* Quand on passe la souris sur le bouton - l'effet au survol */
+  background-color: #ff0000; /* La couleur devient rouge plus clair et vif - ça montre qu'on peut cliquer */
 }
 
-@media (max-width: 500px) {
-  #formulaire {
-    width: 90%;
-    padding: 15px;
+@media (max-width: 500px) { /* Ça veut dire - si l'écran est PLUS PETIT que 500 pixels de large... */
+  #formulaire { /* ... alors on applique ces changements au formulaire */
+    width: 90%; /* Le formulaire prend 90% de la largeur - plus petit pour tenir dans un téléphone */
+    padding: 15px; /* Un peu moins d'espace dedans pour économiser de la place */
   }
 }
 
-.annonce {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 2em;
-  margin-top: 20px;
+.annonce { /* C'est une annonce importante - un message qu'on veut que tu remarques */
+  text-align: center; /* Centré au milieu */
+  color: rgb(255, 255, 255); /* Couleur blanche pour bien se voir */
+  font-size: 2em; /* Très gros - 2 fois plus grand que la taille normale */
+  margin-top: 20px; /* De l'espace au-dessus pour que ce ne soit pas collé */
 }
