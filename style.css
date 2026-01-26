@@ -8,14 +8,14 @@ body { /* C'est le style de TOUTE la page - tout ce qui est en haut en bas à ga
   position: fixed; /* Ça veut dire que même si tu scrolles la page, le footer reste visible */
   bottom: 0; /* Le positionne tout en bas de l'écran */
   left: 0; /* Le positionne du côté gauche */
+  right: 0; /* Le positionne du côté droit */
   width: 100%; /* Il prend toute la largeur de l'écran */
-  height: 60px; /* Il a une hauteur de 60 pixels - pas trop grand pas trop petit */
+  height: 50px; /* Il a une hauteur de 60 pixels - pas trop grand pas trop petit */
   background-color: #b30000; /* Couleur de fond rouge foncé, un peu agressif */
   color: white; /* Le texte à l'intérieur est blanc pour contraster avec le fond rouge */
   display: flex; /* On utilise flexbox - c'est une façon d'arranger les éléments facilement */
   align-items: center; /* Les éléments sont centrés verticalement au milieu */
-  justify-content: flex-start; /* Les éléments commencent à gauche et s'étendent vers la droite */
-  padding-left: 20px; /* On laisse de l'espace sur la gauche avant le contenu commence */
+  justify-content: center; /* Les éléments commencent à gauche et s'étendent vers la droite */
 }
 
 #logo-img { /* C'est l'image du logo - l'image que tu vois en haut du site */
@@ -24,7 +24,7 @@ body { /* C'est le style de TOUTE la page - tout ce qui est en haut en bas à ga
   height: 52px; /* L'image fait 52 pixels de haut */
 }
 
-#logotxt { /* C'est le texte du logo - le titre/nom du site */
+#logotxt { /* C'est le titre/nom du site */
   font-size: 24px; /* La taille du texte - 24 pixels c'est assez gros pour bien voir */
   font-weight: bold; /* Le texte est en gras - plus épais donc plus visible */
   color: red; /* La couleur du texte est rouge */
@@ -148,7 +148,7 @@ img { /* C'est le style pour TOUTES les images du site */
   background-color: #b30000; /* Couleur rouge foncé comme le reste du site */
   color: white; /* Le texte dedans est blanc pour bien contraster */
   padding: 10px; /* De l'espace dedans autour du texte */
-  border: none; /* Pas de bordure - c'est plus moderne */
+  border: 1px solid black; /* Bordure noire */
   border-radius: 4px; /* Les coins sont arrondis */
   width: 100%; /* Le bouton prend toute la largeur du formulaire */
   cursor: pointer; /* Quand on passe la souris dessus le curseur change - pour montrer c'est cliquable */
@@ -173,3 +173,7 @@ img { /* C'est le style pour TOUTES les images du site */
   font-size: 2em; /* Très gros - 2 fois plus grand que la taille normale */
   margin-top: 20px; /* De l'espace au-dessus pour que ce ne soit pas collé */
 }
+
+
+
+
